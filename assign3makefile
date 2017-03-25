@@ -1,0 +1,8 @@
+CC=cc
+CFLAGS=-D_POSIX_PTHREAD_SEMANTICS
+LDFLAGS=-lpthread
+SOURCES=New_Alarm_Condition.c
+EXECUTABLE=-o A3.out
+
+all: 
+	$(CC) $(SOURCES) $(EXECUTABLE) $(CFLAGS) $(LDFLAGS)
